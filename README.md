@@ -1,2 +1,2 @@
 Repositório dedicado à semana de Imersão no Front-end da Alura!!
-Estamos desenvolvendo uma cópia da start page do Spotify!!!
+Estamos desenvolvendo uma cópia do landing page do Spotify!!!

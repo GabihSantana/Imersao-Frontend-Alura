@@ -1,0 +1,42 @@
+:root{
+    /* FONT */
+    --font-dm-sans: "DM Sans", sans-serif;
+<<<<<<< HEAD
+    --font-size-main: 12px;
+
+    /* COLORS */
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0, 0, 07);
+    --bg-main-color: #000;
+    --bg-components: #121212;
+    --bg-hover: rgb(245, 243, 243);
+
+
+    /* FONTS COLORS */
+    --fc-main: #fff;
+    --fc-offset: #b3b3b3;
+
+    /* CARD COLORS */
+    --bg-card1: rgb(0, 100, 80);
+    --bg-card2: rgb(132, 0, 231);
+    --bg-card3: rgb(30, 50, 100);
+    --bg-card4: rgb(140, 25, 50);
+    --bg-card5: rgb(232, 17, 91);
+    --bg-card6: rgb(83, 122, 161);
+    --bg-card7: rgb(142, 102, 172);
+    --bg-card8: rgb(20, 138, 8);
+    --bg-card9: rgb(30, 50, 100);
+    --bg-card10: rgb(233, 20, 41);
+    --bg-card11: rgb(80, 55, 80);
+    --bg-card12: rgb(216, 64, 0);
+    --bg-card13: rgb(186, 93, 7);
+    --bg-card14: rgb(0, 30, 80);
+    --bg-card15: rgb(60, 30, 80);
+=======
+
+    /* COLORS */
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0, 0, 07)
+>>>>>>> b2ccc6afac04eeef6faabaa42e7c1aa3a85ce3ac
+
+}

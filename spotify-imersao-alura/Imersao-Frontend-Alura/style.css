@@ -1,21 +1,5 @@
-* {
-    scrollbar-width: thin; /* para navegadores Firefox */
-}
-
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-*::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
 body{
-    background-color: var(--bg-main-color);
-    font-family: var(--font-dm-sans);
+    background-color: #000;
 }
 
 .sidebar{
@@ -25,24 +9,24 @@ body{
     /*right: 0*/
     bottom: 0;
     padding: 12px;
-    width: 18.75rem;
+    width: 300px;
 }
 
 .sidebar__navigation{
-    background-color: var(--bg-components);
+    background-color: #121212;
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
 .sidebar__navigation .logo{
-    background-color: var(--bg-components);
+    background-color: #121212;
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
 .logo img{
-    width: 5rem;
+    width: 80px;
 }
 
 .sidebar nav ul{
@@ -55,34 +39,21 @@ body{
 }
 
 .sidebar nav ul li a{
-    color: var(--fc-offset);
+    color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
-    font-size: 15px;
-    transition: 0.3s;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
 }
-
-.sidebar__navigation .inicio:hover, .buscar:hover{
-    color: var(--fc-main);
-}
-
-.sidebar__navigation .fa{
-    font-size: 20px;
-    margin-right: 10px;
-    font-weight: 300;
-    padding-right: 8px;
-}
-
-/* BIBLIOTECA */
 
 .library{
-    background-color: var(--bg-components);
+    background-color: #121212;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 4px 8px;
-    color: var(--fc-offset);
+    color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
@@ -95,27 +66,21 @@ body{
 
 .library .library__button{
     margin-right: 10px;
-    color: var(--fc-offset);
+    color: #b3b3b3;
     background-color: transparent;
     border: 0px;
     font-size: 1rem;
     font-weight: 700;
+    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
     padding: 20px 10px;
     display: flex;
-    transition: 0.3s;
-    cursor: pointer;
 }
-
-.library .library__button:hover{
-    color: var(--fc-main);
-}
-
 
 .library .library__button .fa{
-    font-size: 21px;
+    font-size: 20px;
     margin-right: 10px;
     font-weight: 300;
     padding-right: 8px;
@@ -123,12 +88,6 @@ body{
 
 .library .library__content .fa-plus{
     margin: 24px 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.library .library__content .fa-plus:hover{
-    color: var(--fc-main);
 }
 
 .section-playlist{
@@ -137,14 +96,12 @@ body{
     justify-content: space-between;
     gap: 20px;
     background-color: #242424;
-    color: var(--fc-offset);
+    color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0px;
     padding: 16px 20px;
     border-radius: 10px;
-    display: block;
-    position: relative;
 }
 
 .section-playlist .section-playlist__content{
@@ -154,7 +111,8 @@ body{
 
 .section-playlist__content .text{
     padding-bottom: 14px;
-    color: var(--fc-main);
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist__content .title{
@@ -163,106 +121,32 @@ body{
 
 .section-playlist__content .subtitle{
     font-weight: 500;
-    font-size: var(--font-size-main);
+    font-size: 12px;
 }
 
 .section-playlist__content .section-playlist__button{
     display: flex;
     justify-content: center;
-    background-color: var(--fc-main);
-    color: var(--bg-main-color);
+    background-color: #fff;
+    color: #000;
     border-radius: 20px;
-    font-size: var(--font-size-main);
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
     margin-top: 12px;
     border: 0px;
     width: 113px;
-    cursor: pointer;
 }
-
-.section-playlist__content .section-playlist__button:hover{
-    transform: scale(1.04);
-    background-color: var(--bg-hover);
-}
-
-.section-playlist .section-playlist__follow{
-    display: flex;
-    flex-direction: column;
-}
-
-.section-playlist__follow .text{
-    padding-bottom: 14px;
-    color: var(--fc-main);
-}
-
-.section-playlist__follow .title{
-    font-weight: 700;
-}
-
-.section-playlist__follow .subtitle{
-    font-weight: 500;
-    font-size: var(--font-size-main);
-}
-
-.section-playlist__follow .section-follow__button{
-    display: flex;
-    justify-content: center;
-    background-color: var(--fc-main);
-    color: var(--bg-main-color);
-    border-radius: 20px;
-    font-size: var(--font-size-main);
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: none;
-    padding: 10px;
-    margin-top: 12px;
-    border: 0px;
-    width: 150px;
-    cursor: pointer;
-}
-
-.section-playlist__follow .section-follow__button:hover{
-    transform: scale(1.04);
-    background-color: var(--bg-hover);
-}
-
-.section-scroll{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 23vh;
-    overflow-y: hidden; 
-}
-
-.section-scroll:hover{
-    overflow-y: auto; 
-    overflow: overlay; /* Posiciona a barra de rolagem em cima dos itens */
-    z-index: 1;
-}
-
-.section-scroll::-webkit-scrollbar{
-    width: 12px;
-}
-
-.section-scroll::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.section-scroll::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-
-/* LINKS */
 
 .sidebar .utilitarios .utilitarios__links a{
-    color: var(--fc-offset);
+    color: #b3b3b3;
     font-weight: 500;
     font-size: 11px;
     text-decoration: none;
+    font-family: "DM Sans", sans-serif;
     margin: 8px 10px 10px 0px;
 }
 
@@ -275,7 +159,7 @@ body{
 }
 
 .sidebar .utilitarios .utilitarios__links .cookies a{
-    font-size: var(--font-size-main);
+    font-size: 12px;
 }
 
 .sidebar .utilitarios .utilitarios__links .cookies a:hover{
@@ -285,7 +169,7 @@ body{
 .languages .languages__button{
     background-color: transparent;
     border: 1px solid #878787;
-    color: var(--fc-main);
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     align-items: center;
@@ -293,14 +177,13 @@ body{
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 
 .languages .languages__button:hover{
-    transform: scale(1.04);
+    font-size: 14px;
+    border: 1px solid #fff;
 }
-
-/* FOOTER */
 
 .footer {
     position: fixed;
@@ -313,7 +196,8 @@ body{
 .footer footer{
     background-image: linear-gradient(to right, #b31db3, #1c87ce);
     padding: 10px 15px;
-    color: var(--fc-main);
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -335,16 +219,13 @@ body{
     font-size: 16px;
 }
 
-.footer a{
-    text-decoration: none;
-}
 
 .footer .footer__button{
     border: none;
     text-transform: none;
     padding: 15px;
     border-radius: 25px;
-    background-color: var(--fc-main);
+    background-color: #fff;
     width: 200px;
     font-weight: bold;
     font-size: 15px;
@@ -352,6 +233,5 @@ body{
 }
 
 .footer .footer__button:hover{
-    background-color: var(--bg-hover);
-    transform: scale(1.04);
+    background-color: rgb(245, 243, 243);
 }

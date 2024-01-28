@@ -1,7 +1,16 @@
-Repositório dedicado a Landing Page do Spotify estruturado durante e depois a semana de Imersão Frontend da Alura!! 
-Foi uma semana de muito conhecimento, prática e revisão sobre alguns conceitos de HTML, CSS e Javascript, além de ter contato com API's e React!!
+<h1>Landing Page Spotify - Projeto Imersão Frontend Alura</h1>
+Bem-vindo ao repositório dedicado à Landing Page do Spotify, desenvolvida durante e após a Semana de Imersão Frontend da Alura! Esta experiência proporcionou uma semana intensiva de aprendizado, prática e revisão de conceitos essenciais de HTML, CSS e Javascript. Além disso, tivemos a oportunidade de explorar o uso de API's e a implementação de componentes com React.
 
-Imagens do Resultado Final do Projeto:
+<h2>Resultado Final do Projeto</h2>
+Confira abaixo algumas imagens do resultado final da Landing Page:
+
+<h3>Contribuições</h3>
+Contribuições são bem-vindas! Se você identificou algum problema, tem sugestões ou deseja adicionar novas funcionalidades, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+<br/><br/>
+
+Agradecemos à Alura pelo incrível evento de Imersão Frontend, que proporcionou uma oportunidade valiosa para aprimorar nossas habilidades e conhecer novas tecnologias.
+
+Divirta-se explorando a Landing Page do Spotify!
 
 <img src="https://github.com/GabihSantana/Imersao-Frontend-Alura/assets/135717302/bdeba62f-bbba-4880-97f9-37911f4dcef2" />
 <img src="https://github.com/GabihSantana/Imersao-Frontend-Alura/assets/135717302/28e2b6cd-beb6-4a52-a9e4-987b3b87825c" />

@@ -1,0 +1,115 @@
+/* PESQUISA */
+
+.artist {
+  column-count: 5; /* cria um container com 5 colunas e tenta equilibrar o conteúdo de maneira uniforme */
+  grid-gap: 24px;
+  min-width: 372px;
+}
+
+/* Clase que irá auxiliar no search.js */
+.hidden {
+  display: none;
+}
+
+/* Container onde o artista será exibido */
+.grid-container {
+  grid-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  min-width: 372px;
+}
+
+/* Carta do artista que foi realizado a busca */
+.artist-card {
+  background-color: #181818;
+  border-radius: 8px;
+  -ms-flex: 1; /* Define o tamanho flexível de um item no container */
+  flex: 1; /* Define o tamanho flexível de um item no container */
+  isolation: isolate; /* O conteúdo é isolado e renderizado de forma independente */
+  padding: 16px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.artist-card:hover {
+  background-color: #252525;
+}
+
+.card-img {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.artist-img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--fc-main);
+  overflow: hidden;
+  text-overflow: ellipsis; /* ... */
+  white-space: nowrap;
+  min-height: 62px;
+}
+
+.card-text a {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.artist-name {
+  box-sizing: border-box;
+  margin-block: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-block-end: 8px;
+}
+
+.artist-categorie {
+  color: #6a6a6a;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+/* BOTÃO PLAY SPOTIFY */
+
+.play {
+  position: relative;
+}
+
+.play .fa-play {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  padding: 18px;
+  background-color: #179e46;
+  border-radius: 100%;
+  font-size: 14px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+  padding: 20px;
+  cursor: pointer;
+}
+
+#result-artist {
+  padding: 20px 40px;
+}

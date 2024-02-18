@@ -1,0 +1,127 @@
+.playlist-container {
+  max-width: 80vw;
+  height: 100vh;
+  margin-left: 310px;
+  margin-right: 3px;
+}
+
+.playlist-content {
+  height: 68vh;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--bg-components);
+  color: var(--fc-main);
+}
+
+.playlist-content .greeting {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+.playlist-content .session {
+  margin-top: 48px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* SCROLL */
+
+.offer__scroll-container {
+  max-height: 43vh;
+  margin: 14px 0px;
+  overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/*display playlist */
+
+.offer__list-item {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  column-count: 5;
+  margin-bottom: 16px;
+}
+
+.cards {
+  position: relative;
+  width: 190px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.cards span {
+  padding: 16px;
+  position: absolute;
+  color: var(--fc-main);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card1 {
+  background-color: var(--bg-card1);
+}
+.card2 {
+  background-color: var(--bg-card2);
+}
+.card3 {
+  background: var(--bg-card3);
+}
+.card4 {
+  background: var(--bg-card4);
+}
+.card5 {
+  background: var(--bg-card5);
+}
+.card6 {
+  background: var(--bg-card6);
+}
+.card7 {
+  background: var(--bg-card7);
+}
+.card8 {
+  background: var(--bg-card8);
+}
+.card9 {
+  background: var(--bg-card9);
+}
+.card10 {
+  background: var(--bg-card10);
+}
+.card11 {
+  background: var(--bg-card11);
+}
+.card12 {
+  background: var(--bg-card12);
+}
+.card13 {
+  background: var(--bg-card13);
+}
+.card14 {
+  background: var(--bg-card14);
+}
+.card15 {
+  background: var(--bg-card15);
+}
+
+/* PLAYLISTS FOTOS */
+
+.offer__list-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 108px;
+  transform: rotate(25deg) translate(18%, -2%);
+}

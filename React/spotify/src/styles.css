@@ -1,0 +1,19 @@
+* {
+  scrollbar-width: thin; /* para navegadores Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  background-color: #121212;
+  font-family: var(--font-dm-sans);
+}
